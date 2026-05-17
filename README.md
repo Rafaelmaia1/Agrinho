@@ -85,3 +85,15 @@ Tente mudar alguma palavra do texto dentro do seu arquivo `index.html` no VS Cod
 
 Parabéns! Você acabou de criar e rodar um site super moderno e acessível sobre o futuro do nosso planeta! 🌍💚
 
+---
+
+### 🌐 Principais Portais de Referência
+
+* **[W3Schools (Português)](https://www.w3schools.com/tags/default.asp)**
+    * *O que você encontra:* Um dos maiores sites de aprendizado do mundo. Tem uma lista completa de tags HTML, propriedades CSS e funções JavaScript com exemplos práticos no estilo "Tente você mesmo".
+* **[MDN Web Docs (Mozilla)](https://developer.mozilla.org/pt-BR/)**
+    * *O que você encontra:* A documentação oficial e mais confiável da Web. Excelente para entender a fundo para que serve cada elemento e quais são as boas práticas de acessibilidade e semântica.
+* **[Guia de Bolso HTML5 - DevMedia](https://www.devmedia.com.br/guia/guia-completo-de-html/38161)**
+    * *O que você encontra:* Tutoriais, artigos e guias rápidos focados em desenvolvimento web totalmente em português.
+
+---
