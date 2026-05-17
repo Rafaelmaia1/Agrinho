@@ -1,0 +1,253 @@
+/* ===== CONFIGURAÇÕES GLOBAIS E VARIÁVEIS ===== */
+:root {
+  /* Modo Claro (Padrão) */
+  --bg-primary: #f8fafc;
+  --bg-secondary: #ffffff;
+  --text-main: #1e293b;
+  --text-muted: #64748b;
+  --accent: #2e8b57;
+  --accent-light: #e2f0e9;
+  --card-bg: #ffffff;
+  --border-color: #e2e8f0;
+  --hero-bg: linear-gradient(135deg, #1e4620 0%, #2e8b57 100%);
+  --hero-text: #ffffff;
+  --radius: 14px;
+}
+
+/* Seletores para o Modo Escuro */
+.dark-mode {
+  --bg-primary: #090f16;
+  --bg-secondary: #0f172a;
+  --text-main: #f1f5f9;
+  --text-muted: #94a3b8;
+  --card-bg: #1e293b;
+  --border-color: #334155;
+  --accent-light: rgba(46, 139, 87, 0.2);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family:
+    "Poppins",
+    system-ui,
+    -apple-system,
+    sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+/* ===== HEADER E NAVEGAÇÃO ===== */
+.site-header {
+  background-color: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: background-color 0.3s;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.main-nav ul {
+  display: flex;
+  gap: 1.25rem;
+  list-style: none;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: var(--text-muted);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+
+.main-nav a:hover {
+  color: var(--accent);
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+  background: var(--hero-bg);
+  color: var(--hero-text);
+  padding: 4rem 0;
+  text-align: left;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 2rem;
+  align-items: center;
+}
+
+.hero-text h2 {
+  font-size: 2.2rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+}
+
+.hero-visual {
+  display: flex;
+  justify-content: center;
+}
+
+.plant {
+  width: 200px;
+  height: 200px;
+  color: #ffffff;
+}
+
+/* ===== CONTEÚDO E ARTIGOS ===== */
+.content {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  padding: 2.5rem;
+  border-radius: var(--radius);
+  margin: 2rem auto;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  transition:
+    background-color 0.3s,
+    border-color 0.3s;
+}
+
+.blog-post h2 {
+  font-size: 1.8rem;
+  color: var(--accent);
+  margin-bottom: 0.25rem;
+}
+
+.blog-post .meta {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.blog-post h3 {
+  font-size: 1.3rem;
+  margin: 1.5rem 0 0.5rem 0;
+  color: var(--text-main);
+}
+
+.blog-post p {
+  margin-bottom: 1rem;
+  color: var(--text-main);
+  text-align: justify;
+}
+
+.blog-post ul,
+.blog-post ol {
+  margin-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.blog-post li {
+  margin-bottom: 0.5rem;
+}
+
+/* ===== BARRA DE ACESSIBILIDADE FLUTUANTE ===== */
+.a11y-toolbar {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 30px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.15);
+  padding: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  z-index: 1000;
+  transition:
+    background-color 0.3s,
+    border-color 0.3s;
+}
+
+.a11y-toolbar .a11y-btn {
+  background: transparent;
+  border: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--text-main);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+.a11y-toolbar .a11y-btn:hover {
+  background-color: var(--accent-light);
+  color: var(--accent);
+}
+
+/* ===== RODAPÉ ===== */
+.site-footer {
+  background-color: var(--bg-secondary);
+  border-top: 1px solid var(--border-color);
+  padding: 1.5rem 0;
+  text-align: center;
+  color: var(--text-muted);
+  margin-top: 4rem;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 768px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .hero-text {
+    order: 2;
+  }
+  .hero-visual {
+    order: 1;
+  }
+  .main-nav {
+    display: none;
+  }
+  .content {
+    padding: 1.5rem;
+  }
+}
